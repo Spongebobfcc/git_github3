@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>contact us!</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <meta http-equiv="X-AU-Compatible" content="ie-edge">
+  <style>
+    .body {
+      background-image: url("file:///C:/Users/DENO/.vscode/Homenet_git/background2.jpg");
+      background-attachment: fixed;
+
+    }
+
+    @media (max-width:2000px) {
+      h3 {
+        font-size: calc(.5vw + 1rem);
+      }
+
+      h4 {
+        font-size: calc(.5vw + 1rem);
+      }
+
+      p {
+        font-size: calc(1vw + 2.5rem);
+      }
+
+    }
+
+    .head {
+      color: #2d2ded;
+      font-weight: bold;
+      font-size: 2.5rem;
+
+    }
+
+    .ul {
+      display: flex;
+      justify-content: flex-end;
+      margin-right: 35px;
+
+    }
+
+    .li {
+      list-style: none;
+      margin-left: 10px;
+
+    }
+
+    a {
+      color: black;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    li a::after {
+      content: '';
+      width: 0;
+      height: 3px;
+      background-color: blueviolet;
+      margin: auto;
+      display: block;
+
+    }
+
+    li a:hover::after {
+      width: 100%;
+      transition: 0.3s linear;
+    }
+
+    .video-back {
+      background-color: aliceblue;
+
+
+                }
+
+    .back-video {
+      height: 155px;
+      margin: 0;
+      padding: 0;
+      width: auto;
+                }
+
+    .logo {
+      color: green;
+      font-size: 3rem;
+      background-color: black;
+      position: relative;
+      left: 35px;
+          }
+
+    main {
+      border: solid 3px grey;
+      border-radius: 20px;
+      background-color: darkgreen;
+      color: aliceblue;
+      padding-left: 40px;
+      margin: 10px;
+      margin-left: 8px;
+      height: auto;
+      width: auto;
+    }
+
+    .decor {
+      background-color: darkgreen;
+      border: solid white 5px;
+      border-radius: 5px;
+      color: aliceblue;
+      width: 18rem;
+      height: auto;
+      padding-left: 5px;
+      margin: 5px;
+      display: flex;
+      justify-content: left;
+
+      flex-wrap: wrap;
+    }
+
+    .pb {
+      color: black;
+      background-color: aliceblue;
+      border-radius: 5px;
+      padding: 4px;
+      margin-left: 60px;
+    }
+
+    .acc {
+      color: black;
+
+    }
+
+    .par {
+      color: darkorange;
+      font-size: 2.5rem;
+    }
+
+    .text2 {
+      background-image: linear-gradient(75deg, #129be5, #ffff, #ffff);
+      text-transform: uppercase;
+      font-weight: bold;
+      background: linear-gradient(90deg, #1145ee, #ffff, #1717df, #ffff, #5353e8, #1717dc);
+      -webkit-background-clip: text;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+      display: flex;
+      justify-content: center;
+    }
+
+    .text3 {
+      font-size: 2.5rem;
+      font-weight: lighter;
+      background: linear-gradient(90deg, #d42be0, #dc8017, #d42be0, #dc8017, #d42be0);
+      -webkit-background-clip: text;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+      display: flex;
+      justify-content: center;
+    }
+
+    .footsy-main {
+      background-color: antiquewhite;
+      border: solid 3px grey;
+      border-radius: 20px;
+      height: auto;
+      margin: 10px;
+      margin-top: 15px;
+      margin-left: 10px;
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+    }
+
+    .bottom {
+      display: flex;
+      flex-direction: column;
+    }
+
+    a {
+      color: black;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .footsy-h {
+      font-weight: 800;
+      margin-left: 20px;
+    }
+
+    .footsy {
+      font-size: 1.5rem;
+      font-weight: lighter;
+      margin-left: 30px;
+    }
+
+    .footer {
+      background-color: beige;
+      grid-area: footer;
+      background-image: url("file:///C:/Users/DENO/.vscode/Homenet_git/background1.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: fixed;
+      margin-top: 10px;
+      margin-left: 10px;
+      margin-right: 10px;
+      margin-bottom: 5px;
+      border: solid 3px grey;
+      border-radius: 25px;
+      height: fit-content;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .ftext {
+      color: darkorange;
+      font-weight: bold;
+      font-size: 50px;
+    }
+
+    .flex {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .social {
+      background-color: #555;
+      height: fit-content;
+
+      border-radius: 20px;
+      display: flex;
+      flex-direction: column;
+      margin: auto;
+      width: 11.9rem;
+
+    }
+
+    button {
+      background-color: orange;
+      margin: 10px;
+      border-radius: 10px;
+      border: solid 3px #5555;
+      display: flex;
+      justify-content: center;
+    }
+  </style>
+</head>
+<body class="body">
+  <header>
+    <div class="video-back">
+      <div>
+        <nav>
+          <ul class="ul">
+            <li class="li"><a href="index.html">Home</a></li>
+            <li class="li"><a href="info.html">About Us</a></li>
+            <li class="li"><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div>
+        <video autoplay loop muted plays-inline class="back-video">
+          <SOURCE src="file:///C:/Users/DENO/.vscode/Homenet_git/HOMEnet%20Fiber.mp4" type="video/mp4">
+        </video>
+      </div>
+    </div>
+    <p class="head">Pata Internet Poa!<span class="logo">Homenet Fiber</span></p>
+  </header>
+  <main>
+    <div>
+      <p><span class="par">For Intallation Call ;</span><br>
+        0790706234</p>
+    </div>
+    <div class="payment">
+      <div class="decor">
+        <h3>LIPA NA MPESA PAYBILL NO.<br>
+          <span class="pb">4060823</span><br>
+          A/C NUMBER:<span class="acc"> YOUR NAME</span>
+        </h3>
+      </div>
+    </div>
+  </main>
+  <footer class="footsy-main">
+    <div class="top">
+      <h4 class="text2">Contact</h4>
+      <p class="text3">Visit Shop Today</p>
+    </div>
+    <div class="bottom">
+      <p class="footsy-h">Opening Hours</p>
+      <time>
+        <p class="footsy">Monday To Friday - 9am to 9pm</p>
+        <p class="footsy">Saturday And Sunday - 9am to 8pm</p>
+      </time>
+    </div>
+  </footer>
+  <div class=" grid-item footer">
+    <div>
+      <p class="ftext">Want To Contuct Us?</p>
+      <button><a href="contact.html">click here</a></button>
+    </div>
+    <div class="flex">
+      <h3 style="color:yellow;font-size:2.5rem;">Social Media</h3>
+      <div class="social">
+        <center>
+          <a href="https://www.facebook.com "><img src="file:///C:/Users/DENO/.vscode/Homenet_git/facebook.png" height="30" width="30"></a>
+          <a href="https://www.instagram,com"><img src="file:///C:/Users/DENO/.vscode/Homenet_git/instagram.png"
+              height="25" width="25"></a>
+          <a href="https://www.twitter.com"><img src="file:///C:/Users/DENO/.vscode/Homenet_git/twitter.png"
+              height="30" width="30"> </a>
+        </center>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

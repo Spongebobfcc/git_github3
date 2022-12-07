@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <meta http-equiv="X-AU-Compatible" content="ie-edge">
+        <link ref="stylesheet" href="style.css" type="text/css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <style>
+            .body{background-image: url("file:///C:/Users/DENO/.vscode/HOMENET%20FIBER/background2.jpg") ;
+                  background-attachment:fixed ;
+
+                 }
+            @media (max-width:2000px){
+        h3{
+            font-size: calc(.5vw + 1rem) ;
+          }
+
+        h4{
+            font-size: calc( .5vw + 1rem) ; 
+          }
+
+        p{
+            font-size: calc(2vw + 2.5rem) ;
+         }
+        
+                }
+            .container{display:grid ;
+                       grid-template:repeat(5,1fr)/repeat(3,1fr);
+                       grid-gap:5px ;
+                       grid-template-areas:
+                       "video video video"
+                       "dis1 dis2 dis3"
+                       "dis1 dis2 dis3"
+                       "footer footer footer"
+                       "footer footer footer" ;
+            
+                      }
+            .grid-item{
+                       color: black;               
+                       text-align: center;
+                       border: solid 2px grey;
+                       border-radius: 9px;
+                      
+                      }
+            
+            .back-video{grid-area:video;
+                        margin:0;
+                        padding:0;
+                        background:linear-gradient(90deg,#ee6c1b,#ebab77,#ee6c1b  );
+                        height:15rem ;
+            
+                       }
+            .vid{height:11rem;}
+            .Mbps{background-color:#9999;
+                  margin:0;
+                  padding:0;
+                  width:130px;
+                  border-radius:12.5rem;
+                  display:flex;
+                  align-content:center;
+
+                 }
+            .dis1{grid-area:dis1;
+                  background-color:white;
+                 }
+            .dis2{grid-area:dis2;
+                  background-color:white;
+                 }
+            .dis3{grid-area:dis3;
+                  background-color:white;
+                 }
+            .disc{margin:10px;}
+            
+            .footer{grid-area:footer;
+            
+                   }
+            .ul{display: flex;   
+               justify-content: flex-end;
+               margin-right: 35px;
+              
+              }
+            .li{list-style:none;
+                margin-left: 10px;
+                
+              }
+            a{color:black;
+              text-decoration:none ;
+              font-weight:bold;
+             }
+            li a::after{content:'';
+                      width:0;
+                      height:3px;
+                      background-color: blueviolet;
+                      margin:auto ;
+                      display: block;
+                
+                     }
+            li a:hover::after{
+                           width:100% ;
+                           transition:0.3s linear;
+                          }
+            .footer{background-color: beige;
+                    grid-area:footer;
+                    background-image:url("file:///C:/Users/DENO/.vscode/HOMENET%20FIBER/background1.jpg");
+                    background-repeat: no-repeat;
+                    background-size:cover;
+                    background-position: fixed;
+                    margin-top:10px;
+                    margin-left: 10px;
+                    margin-right: 10px;
+                    margin-bottom:5px;
+                    height: fit-content;
+                   }
+                   
+            .ftext{color: darkorange;
+                  font-weight:bold ;
+                  font-size: 50px;
+                  }
+            button{background-color: orange;
+                   margin:10px ;
+                   border-radius: 10px;
+                   border:solid 3px #5555;
+                  }
+            .speed{font-size:1.5rem;}
+            .num{font-size: 40px;}
+            .num2{font-size: 23px;}
+            .first{color: #03aaecdf;}
+            h2{color: darkgreen;}
+            h5{background-color: darkgreen;
+               color:aliceblue;
+              }
+           .facook{height:25px;
+                
+                  }
+            .flex{display:flex;
+                  flex-direction:column;
+                  justify-content:center;
+                 }
+            .social{background-color:#555;
+                    height: fit-content;
+                    
+                    border-radius:20px;
+                    display:flex;
+                    flex-direction:column;
+                    margin:auto;
+                    width:11.9rem;
+                     
+                   }
+            img{margin:15px;}
+          
+</style>
+    </head>
+    <body class="body">
+        <div class="container">
+          
+         <div class="grid-item back-video">
+           <div>
+            <nav>
+              <ul class="ul">
+                <li class="li"><a href="index.html">Home</a></li>
+                <li class="li"><a href="info.html">About Us</a></li>
+                <li class="li"><a href="contact.html">Contact</a></li>
+              </ul>
+            </nav>
+           </div>
+              <div>
+                <video autoplay loop muted plays-inline class="vid">
+                    <SOURCE src="file:///C:/Users/DENO/.vscode/HOMENET%20FIBER/HOMEnet%20Fiber.mp4" type="video/mp4">
+                </video>
+              </div>
+         </div>
+           
+            <div class="grid-item disc dis1">
+              <div claas="cap"><h5>Ultra Fast | Best Seller</h5></div>
+                    <p style="font-weight:bold ;" class="speed">HIGH SPEED</p>
+                    <div class="Mbps">
+                   <h2><span class="num">15</span> <span class="first">Mbps</span><br>INTERNET</h2>
+                   </div>
+                   <div class="price">
+                      <h4>ONLY <span class="num2">Ksh.3,500</span></h4>
+                   </div>
+                  <div>
+                    <ul>
+                        <li>Speeds that are faster than any 4G Home Internet speeds you have come accross!</li>
+                        <li>virtually unlimited devices and seamless 4k streaming on multiple devices,heavy gaming,videoconferencing,multiple people learning virtually or working from home,downloading large file quickly</li>
+                    </ul>
+                  </div>
+                  <div>
+                    <button><a href="file:///C:/Users/DENO/.vscode/HOMENET%20FIBER/contact.html">i am interested here!</a></button>
+                  </div>
+            </div>
+          
+            <div class="grid-item disc dis2">
+              <div claas="cap"><h5>Faster | Best Seller</h5></div>
+                <p style="font-weight:bold;" class="speed">HIGH SPEED</p>
+                <div class="Mbps">
+               <h2><span class="num">10</span> <span class="first">Mbps</span><br>INTERNET</h2>
+               </div>
+               <div class="price">
+                <h4>ONLY <span class="num2">Ksh.2,500</span></h4>
+             </div>
+              <ul>
+                <li>Speeds that are fastrer than any 4G Home Internet speeds you have come accross!</li>
+                <li>Heavy device usage and moderate 4k streaming,heavy gaming,videoconferencing,virtual learning or working from home,downloading large files quickly</li>
+              </ul>
+              <div>
+                <button><a href="file:///C:/Users/DENO/.vscode/HOMENET%20FIBER/contact.html">i am interested here!</a></button>
+              </div>
+            </div>
+        
+            <div class="grid-item disc dis3">
+              <div claas="cap"><h5>Fast | Best Seller</h5></div>
+              <p style="font-weight:bold ;" class="speed">HIGH SPEED</p>
+              <div class="Mbps">
+              <h2><span class="num">7</span> <span class="first">Mbps</span><br>INTERNET</h2>
+              </div>
+              <div class="price">
+               <h4>ONLY <span class="num2">Ksh.2,000</span></h4>
+            </div>
+              <ul>
+               <li>HD streaming,virtual learning,downloading large file quickly,social networking,operating few smart home devices and more</li>
+               <li>Panoramic Wifi with Advanced Security included</li>
+              </ul>
+              <div>
+               <button><a href="file:///C:/Users/DENO/.vscode/HOMENET%20FIBER/contact.html">i am interested here!</a></button>
+              </div>
+           </div>
+           
+           <div class=" grid-item footer">
+            <center>
+            <div>
+              <p class="ftext">Want To Contuct Us?</p>
+                <button><a href="contact.html">click here</a></button>
+            </div>
+            </center>
+            <div class="flex">
+              <h3 style="color:yellow;font-size:2.5rem;">Social Media</h3>
+              <div class="social">
+              <center>
+                <a href="https://www.facebook.com/profile.php?id=100087942108842" ><img src="file:///C:/Users/DENO/.vscode/HOMENET%20FIBER/facebook.png" height="30" width="30"></a>
+              <a href="https://www.instagram,com"><img src="file:///C:/Users/DENO/.vscode/HOMENET%20FIBER/instagram.png" height="25" width="25"></a>
+              <a href="https://www.twitter.com"><img src="file:///C:/Users/DENO/.vscode/HOMENET%20FIBER//twitter.png" height="30" width="30"> </a>
+              </center>
+              </div>
+            </div>
+            </div>
+        </div>
+    </body>
+</html>

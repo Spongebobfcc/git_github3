@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>contact us!</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" >
+    <meta http-equiv="X-AU-Compatible" content="ie-edge">  
+    <style>
+    .body{background-image: url("file:///C:/Users/DENO/.vscode/HOMENET%20FIBER/background2.jpg") ;
+          background-attachment:fixed ;
+
+         }
+    @media screen and (max-width:600px){
+        h3{
+            font-size: calc(.5vw + 1rem) ;
+          }
+
+        h4{
+            font-size: calc( .5vw + 1rem) ; 
+          }
+
+        p{
+            font-size: calc(1vw + 0.5rem) ;
+         }
+    
+        }
+        .ul{display: flex;   
+    justify-content: flex-end;
+    margin-right: 35px;
+              
+   }
+.li{list-style:none;
+    margin-left: 1rem;
+                
+   }
+a{color:black;
+  text-decoration:none ;
+  font-weight:bold;
+ }
+li a::after{content:'';
+            width:0;
+            height:3px;
+            background-color: blueviolet;
+            margin:auto ;
+            display: block;
+                
+            }
+li a:hover::after{
+                  width:100% ;
+                  transition:0.3s linear;
+                 }
+.video-bac{display: flex;
+           justify-content: center;
+           flex-wrap: wrap;
+           flex-direction: column;
+           border-radius: 25px 25px 5px 5px;
+           padding:0;
+           margin:15px;
+           background:linear-gradient(90deg,#ee6c1b,#ebab77,#ee6c1b  );
+          }
+.back-video{width: auto;
+            height: 150px; 
+            margin-bottom:0.5rem;
+            padding: 0;
+           }
+           .mains{background-color: antiquewhite;
+                  border:solid grey 3px;
+                  border-radius:1.2rem;
+                  margin:15px;
+                  display: flex;
+                  flex-direction: column;
+                  justify-content: center;
+                  align-content: center;
+                  align-items: center;
+                 }
+  
+    </style>
+    
+</head>
+   <body class="body">
+      <header>
+        <div class="video-bac">
+          <div>
+                <nav>
+                  <ul class="ul">
+                    <li class="li"><a href="index.html">Home</a></li>
+                    <li class="li"><a href="info.html">About Us</a></li>
+                    <li class="li"><a href="contact.html">Contact</a></li>
+                  </ul>
+                </nav>
+        </div>
+      <video autoplay loop muted plays-inline class="back-video">
+          <SOURCE src="file:///C:/Users/DENO/.vscode/HOMENET%20FIBER/HOMEnet%20Fiber.mp4" type="video/mp4">
+      </video>
+      
+    </div>
+      </header>
+      <main class="mains">
+          <div >
+            <p>HELLO WORLD!!</p>
+               
+          </div>
+
+      </main>
+
+
+   </body>
+</html>
